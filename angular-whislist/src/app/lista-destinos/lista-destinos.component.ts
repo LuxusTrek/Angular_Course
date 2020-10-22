@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Destino } from '../models/destino.model';
 
 @Component({
   selector: 'app-lista-destinos',
@@ -12,6 +13,11 @@ export class ListaDestinosComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+  guardar(nombre,url):boolean{
+    console.log(new Destino(nombre,url));
+    
+    return false;
   }
 
 }
